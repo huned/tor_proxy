@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["huned@734m.com"]
   gem.summary       = %q{The simple way to HTTP GET over Tor with ruby.}
   gem.description   = %q{The simple way to HTTP GET over Tor with ruby.}
-  gem.homepage      = "http://github.com/huned/tor-proxy"
+  gem.homepage      = "http://github.com/huned/tor_proxy"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
