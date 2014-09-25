@@ -18,14 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-By default, assumes a Tor proxy server is running at localhost:9050.
+By default, assumes a Tor proxy server is running at localhost:9050. Tor::Proxy
+instances delegates to Net::HTTP::SOCKSProxy instances, so use it exactly the
+same way.
 
     # returns the body of the http request
-    Tor::Proxy.get('https://www.torproject.org')
+    Tor::Proxy.new.get(URI.parse('https://www.torproject.org'))
 
-Use an instance to set your Tor proxy server's host and port.
+Optionally, set your Tor proxy server's host and port.
 
-    Tor::Proxy.new('localhost', 9050).get('https://www.torproject.org')
+    host, port = 'localhost', 9050
+    Tor::Proxy.new(host, port).get(URI.parse('https://www.torproject.org'))
 
 ## Development
 
