@@ -1,6 +1,6 @@
 # Tor::Proxy
 
-The simple way to HTTP GET over Tor with ruby. See [http://github.com/huned/tor_proxy](http://gitub.com/huned/tor_proxy)
+The simple way to HTTP GET over Tor with ruby. See [http://github.com/huned/tor_proxy](http://github.com/huned/tor_proxy)
 
 ## Installation
 
